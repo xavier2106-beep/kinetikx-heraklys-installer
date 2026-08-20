@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Écrans CSL · Installer</title>
+  <style>
+    :root { --ink:#1A3A10; --lime:#B2DA5F; --lime-l:#F0F8DF; --line:#E5E5E5; --muted:#6C757D; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; background:#F7F8F5; color:#222; margin:0; }
+    .wrap { max-width: 720px; margin: 32px auto; padding: 0 24px 60px; }
+    header { text-align:center; padding: 20px 0 32px; border-bottom: 1px solid var(--line); }
+    header h1 { margin: 8px 0 0; font-weight: 300; font-size: 28px; letter-spacing: -0.02em; color: var(--ink); }
+    header .kicker { font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+    .cta { display: flex; justify-content: center; margin: 32px 0; }
+    .cta a { display: inline-block; background: var(--ink); color: white; padding: 16px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 16px; }
+    .cta a:hover { background: #0D1E08; }
+    .qr { display: flex; justify-content: center; margin: 24px 0; }
+    .qr img { border: 8px solid white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); background: white; }
+    .lang { display: flex; gap: 12px; justify-content: center; margin-bottom: 24px; }
+    .lang button { background: transparent; border: 1px solid var(--line); border-radius: 20px; padding: 6px 16px; font-size: 12px; cursor: pointer; color: var(--muted); }
+    .lang button.active { background: var(--ink); color: white; border-color: var(--ink); }
+    section { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 24px; margin: 16px 0; }
+    section h2 { font-size: 15px; font-weight: 600; margin: 0 0 12px; color: var(--ink); }
+    ol { padding-left: 20px; margin: 0; line-height: 1.7; font-size: 14px; }
+    ol li { padding: 4px 0; }
+    code { background: var(--lime-l); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+    .foot { text-align: center; color: var(--muted); font-size: 12px; margin-top: 32px; }
+    .foot a { color: var(--muted); }
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kicker">Complexe Sportif Longueuil</div>
+      <h1>Écrans CSL · Installer</h1>
+    </header>
+
+    <div class="lang">
+      <button data-set-lang="fr" class="active">Français</button>
+      <button data-set-lang="en">English</button>
+    </div>
+
+    <div data-lang="fr" class="active">
+      <div class="cta">
+        <a href="/csl/heraklys-kiosk-csl-latest.apk">Télécharger l'app kiosque (APK)</a>
+      </div>
+      <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Finstaller.heraklys.com%2Fcsl%2Fheraklys-kiosk-csl-latest.apk" alt="QR téléchargement">
+      </div>
+      <section>
+        <h2>Installation en 4 étapes</h2>
+        <ol>
+          <li>Sur ta box Android (X96 / TV box), ouvre <code>installer.heraklys.com/csl</code> dans un navigateur.</li>
+          <li>Tape <strong>Télécharger l'app kiosque</strong> ou scanne le QR ci-dessus.</li>
+          <li>Ouvre l'APK une fois téléchargé. Autorise l'installation depuis sources inconnues si demandé.</li>
+          <li>Lance <strong>Écrans CSL</strong>. La box se met en plein écran kiosque et affiche automatiquement les scènes configurées.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Mise à jour automatique</h2>
+        <p style="margin:0;font-size:14px;line-height:1.6;">L'app vérifie une nouvelle version au démarrage et toutes les 24h. Aucune action requise après l'install initiale.</p>
+      </section>
+      <section>
+        <h2>Support</h2>
+        <p style="margin:0;font-size:14px;line-height:1.6;">Problème ? Contacte <a href="mailto:xgl@kinetikx.com">xgl@kinetikx.com</a> avec le numéro de série de la box.</p>
+      </section>
+    </div>
+
+    <div data-lang="en">
+      <div class="cta">
+        <a href="/csl/heraklys-kiosk-csl-latest.apk">Download kiosk app (APK)</a>
+      </div>
+      <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Finstaller.heraklys.com%2Fcsl%2Fheraklys-kiosk-csl-latest.apk" alt="Download QR">
+      </div>
+      <section>
+        <h2>Install in 4 steps</h2>
+        <ol>
+          <li>On your Android box (X96 / TV box), open <code>installer.heraklys.com/csl</code> in a browser.</li>
+          <li>Tap <strong>Download kiosk app</strong> or scan the QR above.</li>
+          <li>Open the downloaded APK. Allow install from unknown sources if prompted.</li>
+          <li>Launch <strong>Écrans CSL</strong>. The box switches to fullscreen kiosk and starts serving your assigned scenes.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Auto-update</h2>
+        <p style="margin:0;font-size:14px;line-height:1.6;">The app checks for a new version at startup and every 24h. No action required after initial install.</p>
+      </section>
+      <section>
+        <h2>Support</h2>
+        <p style="margin:0;font-size:14px;line-height:1.6;">Issue? Email <a href="mailto:xgl@kinetikx.com">xgl@kinetikx.com</a> with the box's serial number.</p>
+      </section>
+    </div>
+
+    <p class="foot">HERAKLYS Kiosk · <a href="/">retour aux tenants</a></p>
+  </div>
+
+  <script>
+    document.querySelectorAll('[data-set-lang]').forEach(btn => btn.addEventListener('click', () => {
+      const lang = btn.dataset.setLang;
+      document.querySelectorAll('[data-lang]').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+      document.querySelectorAll('[data-set-lang]').forEach(el => el.classList.toggle('active', el.dataset.setLang === lang));
+    }));
+  </script>
+</body>
+</html>

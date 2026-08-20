@@ -1,0 +1,8 @@
+{
+  "version": "0.0.0",
+  "url": "https://installer.heraklys.com/csl/heraklys-kiosk-csl-latest.apk",
+  "sha256": "",
+  "min_android_sdk": 30,
+  "release_notes": "Awaiting MacAgent's first APK build. Placeholder manifest.",
+  "updated_at": "2026-08-20T07:50:00Z"
+}
